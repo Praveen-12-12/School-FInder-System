@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>School Finder Dashboard</title>
+  <link rel="stylesheet" href="dashstyle.css" />
+   <link rel="stylesheet" href="kk.css">
+</head>
+<body  >
+  
+  <nav class="navbar1">
+    <span class="brand" style=" text-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);">School Finder System</span> 
+      <span class="static" style="padding-right:100px;  text-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);">Welcome to User dashboard</span> 
+   
+    <ul>
+    
+      <li><a href="index.html" style=" text-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); font-size:18px;">Home</a></li>
+    
+      <li><a href="Userlogin.html" style=" text-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); font-size:18px;">Logout</a></li>
+     
+    </ul>
+  </nav>
+  
+  <div class="dashboard">
+    <h1 style="color: orange;">Find a School</h1>
+    <div class="search-section">
+      <input type="text" id="searchInput" placeholder="Search schools..." />
+      <select id="typeFilter">
+        <option value="all">All Types</option>
+        <option value="StateBoard">STATE BOARD</option>
+        <option value="CBSE">CBSE</option>
+        <option value="ICSE">ICSE</option>
+      </select>
+
+      <input type="text" id="locationInput" placeholder="Enter location..." />
+
+      <button onclick="searchSchools()">Search</button>
+      <button id="resetBtn">Reset</button>
+
+    </div>
+    <div id="schoolList" class="school-list">
+      <!-- School cards will appear here -->
+    </div>
+  </div>
+
+  <script src="dashscript.js"></script>
+  
+
+</body>
+</html>

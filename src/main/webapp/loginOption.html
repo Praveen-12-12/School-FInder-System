@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>School Finder System</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="navbar.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f0f2f5;
+      padding: 200px;
+      background-image: url(image/school.jpg);
+      background-size: cover;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .user-box {
+      background: transparent;
+      
+       backdrop-filter: blur(50px);
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(1, 13, 0, 0.8);
+      padding: 50px 20px;
+      flex: 1 1 300px;
+      max-width: 350px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: transform 0.2s ease-in-out;
+      gap: 10px;
+    }
+
+    .user-box:hover {
+      transform: translateY(-50px);
+    }
+
+    .user-icon {
+      font-size: 60px;
+      color: #4a90e2;
+      margin-bottom: 15px;
+    }
+
+    .user-name {
+      font-size: 1.2em;
+      font-weight: bold;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="user-box">
+      <a href="register.html"><img src="image/Admin.png"/></a>
+      <div class="user-name">ADMIN</div>
+    </div>
+
+    <div class="user-box">
+        <a href="Userlogin.html"><img src="image/user.png"/></a>
+      <div class="user-name">USER</div>
+    </div>
+    
+  </div>
+ 
+  
+</body>
+</html>

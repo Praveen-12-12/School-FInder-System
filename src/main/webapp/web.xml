@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app  xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xmlns="https://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="https://xmlns.jcp.org/xml/ns/javaee https://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+
+<servlet>
+    <servlet-name>UserList</servlet-name>
+    <servlet-class>com.Schoolfs.UserList</servlet-class>
+</servlet>
+<servlet>
+    <servlet-name>Userlist</servlet-name>
+    <servlet-class>com.Schoolfs.Userlist</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>Userlist</servlet-name>
+    <url-pattern>/userList</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>EditUser</servlet-name>
+    <servlet-class>com.Schoolfs.EditScreen</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>EditUser</servlet-name>
+    <url-pattern>/editScreen</url-pattern>
+</servlet-mapping>
+<servlet>
+    <servlet-name>EditUser</servlet-name>
+    <servlet-class>com.Schoolfs.EditScreen</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>EditUser</servlet-name>
+    <url-pattern>/editScreen</url-pattern>
+</servlet-mapping>
+<mime-mapping>
+    <extension>svg</extension>
+    <mime-type>image/svg+xml</mime-type>
+</mime-mapping>
+<mime-mapping>
+    <extension>jpg</extension>
+    <mime-type>image/jpeg</mime-type>
+</mime-mapping>
+<mime-mapping>
+    <extension>png</extension>
+    <mime-type>image/png</mime-type>
+</mime-mapping>
+<mime-mapping>
+    <extension>mp4</extension>
+    <mime-type>video/mp4</mime-type>
+</mime-mapping>
+<mime-mapping>
+    <extension>jpg</extension>
+    <mime-type>image/jpeg</mime-type>
+</mime-mapping>
+<mime-mapping>
+    <extension>png</extension>
+    <mime-type>image/png</mime-type>
+</mime-mapping>
+<mime-mapping>
+    <extension>mp4</extension>
+    <mime-type>video/mp4</mime-type>
+</mime-mapping>
+      <welcome-file-list>
+    <welcome-file>loginOption.html</welcome-file>
+  </welcome-file-list>
+
+            <welcome-file-list>
+    <welcome-file>register.html</welcome-file>
+  </welcome-file-list>
+  <servlet-mapping>
+    <servlet-name>default</servlet-name>
+    <url-pattern>/image/*</url-pattern>
+</servlet-mapping>
+</web-app>
+
+
+
