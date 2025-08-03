@@ -1,3 +1,5 @@
+School Finder System
+
 This project is done through eclipse
 
 technologies used
